@@ -71,6 +71,11 @@ group :test do
   gem "webdrivers"
 end
 
+group :production do
+  gem 'unicorn','6.1.0'
+  gem 'raindrops', '~> 0.20.1'
+end
+
 gem "carrierwave","~>2.2.3"
 gem "mini_magick","~>4.12.0"
 gem "devise","~>4.8.1"
